@@ -9,8 +9,11 @@ from langchain.memory import ConversationBufferMemory
 from langchain.chains import LLMChain
 from langchain.prompts import PromptTemplate
 from langchain_openai import ChatOpenAI
-from google import genai
-from google.genai import types
+#from google import genai
+#from google.genai import types
+import google.generativeai as genai
+from google.generativeai import types
+
 import openai
 
 # --- Load API Keys ---
