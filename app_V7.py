@@ -39,7 +39,7 @@ if uploaded_file:
     if topic:
         # --- Gemini Text Extraction ---
         with st.spinner("🔍 Extracting relevant topic text using Gemini..."):
-            model = genai.GenerativeModel("gemini-1.5-flash")
+            model = genai.GenerativeModel("gemini-2.0-flash")
             prompt = f"Extract detailed content for the topic '{topic}' from the given text:\n\n{text}"
             response = model.generate_content(prompt)
             extracted_text = response.text.strip()
